@@ -1,0 +1,21 @@
+{
+    "name": "acquia/blt-ide-local",
+    "description": "Allows BLT to treat an Acquia IDE environment as local",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Acquia Engineering",
+            "homepage": "https://www.acquia.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Acquia\\BltTugboat\\": "./src/"
+        },
+        "classmap": [
+            "src/Blt/Plugin/EnvironmentDetector/IdeDetector.php"
+        ]
+    }
+}
