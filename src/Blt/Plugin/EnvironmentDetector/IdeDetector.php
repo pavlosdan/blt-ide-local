@@ -9,7 +9,7 @@ class IdeDetector extends EnvironmentDetector {
   /**
    * Is AH IDE.
    */
-  public static function isLocalEnv() {
+  public static function isLocalEnv(): bool {
     // Check if we are on an Acquia Environment that is an IDE as well.
     $is_local = (self::isAhEnv() && self::getAhEnv() == 'ide') ||
       (!self::isAhEnv() && !self::isPantheonEnv() && !self::isCiEnv());
